@@ -1,0 +1,16 @@
+footer {
+    background-color: #222222;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .wrap-col{
+    display: flex;
+    gap: 1em;
+}
+
+footer .wrap-col .col{
+    padding: 0 2em;
+}
