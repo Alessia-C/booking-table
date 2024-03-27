@@ -1,0 +1,24 @@
+#hero {
+  background-color: #eee;
+}
+
+#hero .container {
+  width: 80vw;
+  display: flex;
+  padding: 4em 2em;
+  margin: 0 auto;
+}
+
+#hero .col {
+  flex: 1;
+}
+
+#hero .col .info {
+  width: 80%;
+  line-height: 1.5em;
+}
+
+#hero .col img {
+  max-width: 100%;
+  height: auto;
+}

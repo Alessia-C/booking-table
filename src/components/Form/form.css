@@ -1,9 +1,13 @@
-form {
+.wrap-form {
   width: 60vw;
+  margin: 2em auto;
+}
+
+form {
   display: flex;
   flex-direction: column;
   gap: 1.2em;
-  margin: 2em auto;
+  margin-top: 1em;
 }
 
 form .input-element {

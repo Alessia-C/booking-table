@@ -4,8 +4,8 @@ const Nav = () => {
   return (
     <nav>
         <ul>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Reservation</a></li>
+            <li><a href='#hero'>Home</a></li>
+            <li><a href='#reservation'>Reservation</a></li>
         </ul>
     </nav>
   )

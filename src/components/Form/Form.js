@@ -27,7 +27,7 @@ const Form = ({ availableTimes, updateTimes }) => {
   };
 
   return (
-    <>
+    <div className="wrap-form">
       <h3>Book Now</h3>
       <form onSubmit={handleSubmit}>
         <div className="input-element">
@@ -86,7 +86,7 @@ const Form = ({ availableTimes, updateTimes }) => {
           disabled={!isFormValid()}
         />
       </form>
-    </>
+      </div>
   );
 };
 

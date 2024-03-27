@@ -16,7 +16,9 @@ const BookingForm = () => {
   const handleUpdateTimes = updateTimes(dispatch);
 
   return (
-    <Form availableTimes={availableTimes} updateTimes={handleUpdateTimes} />
+    <section id="reservation">
+      <Form availableTimes={availableTimes} updateTimes={handleUpdateTimes} />
+    </section>
   );
 };
 

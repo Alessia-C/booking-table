@@ -1,9 +1,10 @@
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 1em;
   padding: 1em 2em;
   align-items: center;
+  box-shadow: 5px 5px 10px #29292936;
 }
 
 header ul li {
