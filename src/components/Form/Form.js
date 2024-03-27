@@ -6,7 +6,7 @@ const Form = ({ availableTimes, updateTimes }) => {
     date: "",
     time: availableTimes[0],
     guests: 1,
-    occasion: "Birthday"
+    occasion: "Birthday",
   });
 
   const handleChange = (e) => {
@@ -27,63 +27,66 @@ const Form = ({ availableTimes, updateTimes }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="input-element">
-        <label htmlFor="date">Choose date</label>
+    <>
+      <h3>Book Now</h3>
+      <form onSubmit={handleSubmit}>
+        <div className="input-element">
+          <label htmlFor="date">Choose date</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value={formData.date}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="input-element">
+          <label htmlFor="res-time">Choose time</label>
+          <select
+            id="res-time"
+            name="time"
+            value={formData.time}
+            onChange={handleChange}
+          >
+            {availableTimes.map((item) => (
+              <option key={item} value={item}>
+                {item}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="input-element">
+          <label htmlFor="guests">Number of guests</label>
+          <input
+            type="number"
+            placeholder="1"
+            min="1"
+            max="10"
+            id="guests"
+            name="guests"
+            value={formData.guests}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="input-element">
+          <label htmlFor="occasion">Occasion</label>
+          <select
+            id="occasion"
+            name="occasion"
+            value={formData.occasion}
+            onChange={handleChange}
+          >
+            <option value="Birthday">Birthday</option>
+            <option value="Anniversary">Anniversary</option>
+          </select>
+        </div>
         <input
-          type="date"
-          id="date"
-          name="date"
-          value={formData.date}
-          onChange={handleChange}
+          type="submit"
+          value="Make Your reservation"
+          disabled={!isFormValid()}
         />
-      </div>
-      <div className="input-element">
-        <label htmlFor="res-time">Choose time</label>
-        <select
-          id="res-time"
-          name="time"
-          value={formData.time}
-          onChange={handleChange}
-        >
-          {availableTimes.map((item) => (
-            <option key={item} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="input-element">
-        <label htmlFor="guests">Number of guests</label>
-        <input
-          type="number"
-          placeholder="1"
-          min="1"
-          max="10"
-          id="guests"
-          name="guests"
-          value={formData.guests}
-          onChange={handleChange}
-        />
-      </div>
-      <div className="input-element">
-        <label htmlFor="occasion">Occasion</label>
-        <select
-          id="occasion"
-          name="occasion"
-          value={formData.occasion}
-          onChange={handleChange}
-        >
-          <option value="Birthday">Birthday</option>
-          <option value="Anniversary">Anniversary</option>
-        </select>
-      </div>
-      <input
-        type="submit"
-        value="Make Your reservation"
-        disabled={!isFormValid()}
-      />
-    </form>
+      </form>
+    </>
   );
 };
 
