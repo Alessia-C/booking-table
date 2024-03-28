@@ -22,3 +22,12 @@
   max-width: 100%;
   height: auto;
 }
+
+@media (max-width: 768px) {
+  #hero .container {
+    width: 100vw;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+  }
+}

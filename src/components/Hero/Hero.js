@@ -15,7 +15,14 @@ const Hero = () => {
           </p>
         </div>
         <div className="col">
-          <img src={restaurant} alt="photo little lemon restaurant" />
+          <img
+            src={restaurant}
+            alt="photo little lemon restaurant"
+            aria-labelledby="restaurant-heading"
+          />
+          <h5 id="restaurant-heading" className="sr-only">
+            Photo of Little Lemon restaurant
+          </h5>
         </div>
       </div>
     </section>
