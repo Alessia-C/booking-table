@@ -39,3 +39,11 @@ form button:disabled {
   color: #666666;
   cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+  .wrap-form {
+    width: 100vw;
+    padding: 2em;
+    margin: 0;
+  }
+}
