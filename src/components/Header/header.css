@@ -14,3 +14,31 @@ header ul li {
 header ul li:first-child {
   margin-right: 1em;
 }
+
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header ul li:first-child {
+    margin-right: 0;
+  }
+
+  li a {
+    padding: 1em;
+  }
+}
