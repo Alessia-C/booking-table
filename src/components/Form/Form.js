@@ -11,7 +11,10 @@ const Form = ({ availableTimes, updateTimes }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
     if (name === "date") {
       updateTimes(value);
     }
@@ -23,7 +26,7 @@ const Form = ({ availableTimes, updateTimes }) => {
   };
 
   const isFormValid = () => {
-    return formData.date !== "";
+    return formData.date !== "" && formData.time !== "";
   };
 
   return (
@@ -38,6 +41,8 @@ const Form = ({ availableTimes, updateTimes }) => {
             name="date"
             value={formData.date}
             onChange={handleChange}
+            aria-label="date-label"
+            required
           />
         </div>
         <div className="input-element">
@@ -47,7 +52,10 @@ const Form = ({ availableTimes, updateTimes }) => {
             name="time"
             value={formData.time}
             onChange={handleChange}
+            aria-label="Choose time"
+            required
           >
+            <option value="">Select a time</option>
             {availableTimes.map((item) => (
               <option key={item} value={item}>
                 {item}
@@ -66,6 +74,8 @@ const Form = ({ availableTimes, updateTimes }) => {
             name="guests"
             value={formData.guests}
             onChange={handleChange}
+            aria-label="Number of guests"
+            required
           />
         </div>
         <div className="input-element">
@@ -75,18 +85,22 @@ const Form = ({ availableTimes, updateTimes }) => {
             name="occasion"
             value={formData.occasion}
             onChange={handleChange}
+            aria-label="Occasion"
           >
             <option value="Birthday">Birthday</option>
             <option value="Anniversary">Anniversary</option>
           </select>
         </div>
-        <input
+        <button
           type="submit"
-          value="Make Your reservation"
           disabled={!isFormValid()}
-        />
+          aria-label="Make Your reservation"
+          data-testid="submit-button"
+        >
+          Make Your reservation
+        </button>
       </form>
-      </div>
+    </div>
   );
 };
 

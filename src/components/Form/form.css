@@ -20,21 +20,21 @@ form label {
   font-weight: 600;
 }
 
-form :where(input, select) {
+form :where(input, select, button) {
   font-size: 1rem;
   padding: 0.8em;
   border-radius: 5px;
   border-width: 1px;
 }
 
-form input[type="submit"] {
+form button {
   background: #4a5f57;
   color: #fff;
   border: none;
   margin-top: 1.5em;
 }
 
-form input[type="submit"]:disabled {
+form button:disabled {
   background-color: #cccccc;
   color: #666666;
   cursor: not-allowed;
