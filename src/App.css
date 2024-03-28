@@ -37,3 +37,10 @@ h3{
 p{
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  html{
+    font-size: 16px;
+  }
+
+}
