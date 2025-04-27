@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/booking-table/static/css/main.ed0331c3.css",
+    "main.js": "/booking-table/static/js/main.d22b69e5.js",
+    "static/js/453.b80c8840.chunk.js": "/booking-table/static/js/453.b80c8840.chunk.js",
+    "static/media/insiderestaurant.jpg": "/booking-table/static/media/insiderestaurant.477800593347feec2786.jpg",
+    "static/media/restaurant.jpg": "/booking-table/static/media/restaurant.b1a3ea152bf1d9e2b7cc.jpg",
+    "static/media/Logo.svg": "/booking-table/static/media/Logo.eb8b464dcaa9e73fc5762487771080be.svg",
+    "index.html": "/booking-table/index.html",
+    "main.ed0331c3.css.map": "/booking-table/static/css/main.ed0331c3.css.map",
+    "main.d22b69e5.js.map": "/booking-table/static/js/main.d22b69e5.js.map",
+    "453.b80c8840.chunk.js.map": "/booking-table/static/js/453.b80c8840.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed0331c3.css",
+    "static/js/main.d22b69e5.js"
+  ]
+}
