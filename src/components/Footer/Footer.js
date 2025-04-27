@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="wrap-col">
         <div className="col">
           <h4>Navigation</h4>
-          <Nav />
+          <Nav footer={true} />
         </div>
         <div className="col">
           <h4>Contact</h4>

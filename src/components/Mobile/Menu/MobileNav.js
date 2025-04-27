@@ -9,7 +9,6 @@ const MobileNav = () => {
     setIsOpen(prev =>!prev);
   };
 
-  console.log(isOpen)
   return (
     <div className="hamburger-menu">
       <button className="hamburger-icon" onClick={toggleMenu}>

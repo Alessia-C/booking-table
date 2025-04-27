@@ -16,14 +16,6 @@
   color: #fff;
   width: 50vw;
 }
-#hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  color: #fff;
-  width: 50vw;
-}
 
 #hero .photo-label{
   text-align: end;
@@ -43,10 +35,7 @@
 }
 
 @media (max-width: 768px) {
-  #hero .container {
-    width: 100vw;
-    flex-direction: column;
-    gap: 1em;
-    padding: 2em;
+  #hero .hero-content {
+    width: 80vw;
   }
 }

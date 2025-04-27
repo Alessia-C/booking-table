@@ -22,7 +22,6 @@ const Form = ({ availableTimes, updateTimes }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
   };
 
   const isFormValid = () => {

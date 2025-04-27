@@ -26,12 +26,24 @@ header ul li:first-child {
 .bar {
   width: 25px;
   height: 2px;
-  background-color: #333;
+  background-color: var(--brand-color);
   margin: 5px 0;
 }
 
-@media (max-width: 768px) {
 
+header.scrolled{
+  background-color: #191919ba;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1em;
+  }
+
+  header .wrap-logo{
+    width: 30px;
+    overflow: hidden;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -44,8 +56,4 @@ header ul li:first-child {
   li a {
     padding: 1em;
   }
-}
-
-header.scrolled{
-  background-color: #191919ba;
 }

@@ -15,8 +15,7 @@ const Hero = () => {
         <p className="info">
           Nestled in the heart of nature, Little Lemon is a restaurant that
           celebrates authentic flavors with dishes made only from fresh, natural
-          ingredients. Each plate is a journey of taste, set in a green and
-          relaxing environment where food meets the freshness of the earth.
+          ingredients.
         </p>
         <a className="cta" href="/reservation">Book Your Table</a>
       </div>

@@ -25,11 +25,14 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "scrolled" : ""}>
-      <img
-        src={logo}
-        alt="logo little lemon restaurant"
-        aria-label="Little Lemon Restaurant Logo"
-      />
+      <figure className="wrap-logo">
+        <img
+          className="logo"
+          src={logo}
+          alt="logo little lemon restaurant"
+          aria-label="Little Lemon Restaurant Logo"
+        />
+      </figure>
       {isMobile ? <MobileNav /> : <Nav />}
     </header>
   );
