@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Booking Table App
+This is a project developed with React for the Meta Fullstack Developer course. The application allows users to book a table at a restaurant by selecting the date, time, number of people, and other relevant information for the reservation.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
+React.js - JavaScript library for building user interfaces
+
+React Hooks - For state and side effect management
+
+CSS - For styling the application
+
+Testing Library - For testing component behavior
+
+GitHub Pages - For deploying the application to a static domain
+
+## Main Features
+Table Booking: Users can select the date, time, and number of people to book a table.
+
+Time Update: Available times are automatically updated based on the selected date.
+
+Booking Form: The user enters details such as name, phone number, email, and additional notes to complete the reservation.
 
 ## Available Scripts
 
