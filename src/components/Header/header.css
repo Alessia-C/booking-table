@@ -4,7 +4,10 @@ header {
   gap: 1em;
   padding: 1em 2em;
   align-items: center;
-  box-shadow: 5px 5px 10px #29292936;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
 }
 
 header ul li {
@@ -41,4 +44,8 @@ header ul li:first-child {
   li a {
     padding: 1em;
   }
+}
+
+header.scrolled{
+  background-color: #191919ba;
 }

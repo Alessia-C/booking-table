@@ -1,26 +1,45 @@
 #hero {
-  background-color: #eee;
+  position: relative;
 }
 
-#hero .container {
-  width: 80vw;
-  display: flex;
-  padding: 4em 2em;
-  margin: 0 auto;
+#hero img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
 }
 
-#hero .col {
-  flex: 1;
+#hero .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fff;
+  width: 50vw;
+}
+#hero .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fff;
+  width: 50vw;
 }
 
-#hero .col .info {
-  width: 80%;
-  line-height: 1.5em;
+#hero .photo-label{
+  text-align: end;
+  margin-right: 2em;
+  font-size: 0.6rem;
+  font-weight: 500;
+  opacity: .8;
 }
 
-#hero .col img {
-  max-width: 100%;
-  height: auto;
+#hero .hero-content p.info{
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+#hero .hero-content .cta{
+  margin-top: 1em;
 }
 
 @media (max-width: 768px) {

@@ -5,26 +5,24 @@ import "./hero.css";
 const Hero = () => {
   return (
     <section id="hero">
-      <div className="container">
-        <div className="col">
-          <h2>Little Lemon</h2>
-          <p className="info">
-            Lorem ipsum dolor sit amet consectetur. Porta urna feugiat orci
-            laoreet velit morbi auctor. Id quis vitae lobortis tempus nascetur
-            tortor in scelerisque.
-          </p>
-        </div>
-        <div className="col">
-          <img
-            src={restaurant}
-            alt="photo little lemon restaurant"
-            aria-labelledby="restaurant-heading"
-          />
-          <h5 id="restaurant-heading" className="sr-only">
-            Photo of Little Lemon restaurant
-          </h5>
-        </div>
+      <img
+        src={restaurant}
+        alt="little lemon restaurant"
+        aria-labelledby="restaurant-heading"
+      />
+      <div className="hero-content">
+        <h2>A Natural Flavor, A Unique Atmosphere</h2>
+        <p className="info">
+          Nestled in the heart of nature, Little Lemon is a restaurant that
+          celebrates authentic flavors with dishes made only from fresh, natural
+          ingredients. Each plate is a journey of taste, set in a green and
+          relaxing environment where food meets the freshness of the earth.
+        </p>
+        <a className="cta" href="/reservation">Book Your Table</a>
       </div>
+      <h5 id="restaurant-heading" className="photo-label">
+        Photo of Little Lemon restaurant
+      </h5>
     </section>
   );
 };
