@@ -1,24 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Nav from "../../Nav";
-import "./menu.css"
+import "./menu.css";
 
-const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const MobileNav = ({setIsMenuOpen, isMenuOpen}) => {
+  const [isOpen, setIsOpened] = useState("");
 
   const toggleMenu = () => {
-    setIsOpen(prev =>!prev);
+    setIsMenuOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    if(isMenuOpen) {
+      setIsOpened("menu-opened");
+    } else {
+      setIsOpened("");
+    }
+  }, [isMenuOpen])
+
   return (
-    <div className="hamburger-menu">
+    <div className={`hamburger-menu ${isOpen}`}>
       <button className="hamburger-icon" onClick={toggleMenu}>
-        <div className={isOpen ? "bar1 open" : "bar1"}></div>
-        <div className={isOpen ? "bar2 open" : "bar2"}></div>
-        <div className={isOpen ? "bar3 open" : "bar3"}></div>
+        <span className="bar"></span>
       </button>
-      <div className={isOpen ? "menu open" : "menu"}>
-        <Nav />
-      </div>
+      {isOpen && <Nav />}
     </div>
   );
 };

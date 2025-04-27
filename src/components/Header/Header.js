@@ -8,6 +8,7 @@ import MobileNav from "../Mobile/Menu/MobileNav";
 const Header = () => {
   const isMobile = useIsMobile();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +34,7 @@ const Header = () => {
           aria-label="Little Lemon Restaurant Logo"
         />
       </figure>
-      {isMobile ? <MobileNav /> : <Nav />}
+      {isMobile ? <MobileNav setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen}  /> : <Nav />}
     </header>
   );
 };
