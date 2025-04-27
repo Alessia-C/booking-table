@@ -23,6 +23,10 @@
   font-size: 0.6rem;
   font-weight: 500;
   opacity: .8;
+  position: absolute;
+  color: #fff;
+  bottom: 10px;
+  right: 0;
 }
 
 #hero .hero-content p.info{
@@ -37,5 +41,9 @@
 @media (max-width: 768px) {
   #hero .hero-content {
     width: 80vw;
+  }
+
+  #hero img{
+    height: 70vh;
   }
 }

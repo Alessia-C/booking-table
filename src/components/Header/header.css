@@ -15,7 +15,7 @@ header ul li {
   display: inline-block;
 }
 
-header ul li:first-child {
+header ul li:not(:last-child) {
   margin-right: 1em;
 }
 

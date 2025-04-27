@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 import Form from "../Form/Form";
 import { initializeTimes, updateTimes } from "../../utils/helperFunction";
+import restaurantImage from "../../assets/img/insiderestaurant.jpg";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -17,6 +18,9 @@ const BookingForm = () => {
 
   return (
     <section id="reservation">
+      {/* <figure className="reservation-image">
+        <img src={restaurantImage} alt="restaurant" />
+      </figure> */}
       <Form availableTimes={availableTimes} updateTimes={handleUpdateTimes} />
     </section>
   );

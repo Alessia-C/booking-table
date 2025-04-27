@@ -1,0 +1,30 @@
+#aboutus {
+  display: flex;
+  align-items: center;
+}
+
+#aboutus .aboutus-info {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#aboutus .rastaurant-image {
+  flex: 1;
+  height: 60vh;
+}
+
+#aboutus .rastaurant-image img {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+    #aboutus {
+      flex-direction: column-reverse;
+    }
+  }

@@ -22,7 +22,7 @@ const MobileNav = ({setIsMenuOpen, isMenuOpen}) => {
       <button className="hamburger-icon" onClick={toggleMenu}>
         <span className="bar"></span>
       </button>
-      {isOpen && <Nav />}
+      {isOpen && <Nav setIsMenuOpen={setIsMenuOpen} />}
     </div>
   );
 };
